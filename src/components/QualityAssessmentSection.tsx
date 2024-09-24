@@ -29,7 +29,7 @@ const QualityAssessmentSection: React.FC = () => {
           <img
             src="QualityAssessmentCombined.png"
             alt="Path Planning"
-            style={{ width: '100%', height: '300px' }}
+            style={{ width: '70%', height: 'auto' }}
           />          
         </Box>
         <Typography
