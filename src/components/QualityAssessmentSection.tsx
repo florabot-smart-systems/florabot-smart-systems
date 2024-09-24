@@ -39,7 +39,7 @@ const QualityAssessmentSection: React.FC = () => {
       >
         The distribution of these morphological parameters across nursery plant beds is used for growth estimation, stress and disease analysis, monitoring plant elongation, identifying outliers, and assessing the aesthetic value of ornamental plants, which directly impacts their market share. 
       </Typography>
-      <Box sx={{ width: '85%', margin: '0 10px', textAlign: 'center' }}>
+      <Box sx={{ width: '65%', margin: '0 10px', textAlign: 'center' }}>
           <img
             src="Plots_Combined.png"
             alt="Path Planning"
