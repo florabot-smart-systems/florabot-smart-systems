@@ -20,7 +20,7 @@ const PathFollowingSection: React.FC = () => {
       <Box
         component="iframe"
         width="80%"
-        height="400px"
+        height="1280px"
         src="https://www.youtube.com/embed/sa3ebk370uU?si=7ZWaTChuQ2ulBRRm"
         title="YouTube video player"
         frameBorder="0"
@@ -39,7 +39,7 @@ const PathFollowingSection: React.FC = () => {
           <img
             src="PathPlanningPic.jpeg"
             alt="Path Planning"
-            style={{ width: '100%', height: '380px' }}
+            style={{ width: '100%', height: 'auto' }}
           />
           <Typography variant="caption" display="block" sx={{ marginTop: '5px' }}>
             Path Planning
@@ -49,7 +49,7 @@ const PathFollowingSection: React.FC = () => {
           <img
             src="ZED_PathPlanning.png"
             alt="ZED Path Planning"
-            style={{ width: '100%', height: '380px' }}
+            style={{ width: '100%', height: 'auto' }}
           />
           <Typography variant="caption" display="block" sx={{ marginTop: '5px' }}>
             ZED Path Planning
