@@ -1,7 +1,7 @@
 {
   "name": "florabot",
   "version": "0.1.0",
-  "homepage": "florabot-smart-systems.github.io/",
+  "homepage": "florabot-smart-systems.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
