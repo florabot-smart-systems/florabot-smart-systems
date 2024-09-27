@@ -17,7 +17,7 @@ const ProblemStatement: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="relative w-full max-w-6xl">
         {/* Main skewed card */}
-        <div className="relative transform -skew-y-12 bg-gradient-to-bl from-white to-transparent p-10 h-[600px] w-full">
+        <div className="relative transform -skew-y-12 bg-gradient-to-r from-[#C0E1C7] to-transparent p-10 h-[600px] w-full">
           
           {/* Inner content container without skew */}
           <div className="absolute inset-0 flex flex-row transform skew-y-12 p-8 h-full w-full">

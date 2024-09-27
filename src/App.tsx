@@ -2,6 +2,7 @@ import React from 'react';
 import HomePage from './pages/Home';
 import ProblemStatement from './pages/ProblemStatement';
 import WorkFlow from './pages/WorkFlow';
+import HowItWorks from './pages/HowItWorks';
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <HomePage />
       <ProblemStatement />
       <WorkFlow/>
+      <HowItWorks/>
     </div>
   );
 };
