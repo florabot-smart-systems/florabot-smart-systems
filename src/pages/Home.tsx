@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center p-4">
       <div className="relative w-full max-w-6xl">
         {/* First large card with rounded corners and color #EAF6E4 */}
         <div className="bg-[#EAF6E4] rounded-3xl p-10 h-[600px]">
