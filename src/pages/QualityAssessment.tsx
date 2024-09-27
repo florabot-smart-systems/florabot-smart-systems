@@ -3,10 +3,6 @@ import React from 'react';
 const QualityAssessment: React.FC = () => {
   return (
     <div className="relative z-10 w-full max-w-7xl mt-16 mx-auto p-8">
-
-      {/* Background gradient similar to Workflow page */}
-      <div className="absolute inset-0 transform -rotate-6 bg-gradient-to-r from-[#C0E1C7] to-transparent opacity-50 w-[70%] h-full -ml-20 z-0"></div>
-
       {/* Section Title */}
       <div className="w-full text-center mb-12 relative z-10">
         <h2 className="text-5xl font-bold mb-6 font-madimi text-white">Quality Assessment</h2>

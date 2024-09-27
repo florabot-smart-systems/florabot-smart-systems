@@ -3,9 +3,6 @@ import React from 'react';
 const Review: React.FC = () => {
   return (
     <div className="relative z-10 w-full max-w-7xl mt-16 mx-auto p-8 bg-gray-900 text-white">
-      
-      {/* Background gradient similar to Workflow */}
-      <div className="absolute inset-0 transform rotate-3 bg-gradient-to-b from-[#E0ECE4] via-[#96AF98] to-transparent opacity-50 w-screen h-full -ml-20 z-0"></div>
 
       {/* Section Title */}
       <div className="w-full text-center mb-12 relative z-10">
