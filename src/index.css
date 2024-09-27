@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@400;500&family=Madimi+One&display=swap');
+
 
 body {
   margin: 0;
