@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const images = ['imgs/Problem_Statement_1.JPG', 'imgs/Problem_Statement_2.JPG', 'imgs/Problem_Statement_1.JPG'];
+const images = ['imgs/Problem_Statement_1.JPG', 'imgs/Problem_Statement_2.JPG', 'imgs/Problem_Statement_3.JPG'];
 
 const ProblemStatement: React.FC = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -16,12 +16,14 @@ const ProblemStatement: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="relative w-full max-w-6xl">
-        {/* Rotated card with radial gradient background */}
-        <div className="relative transform -rotate-12 bg-gradient-to-br from-white to-transparent opacity-70 rounded-3xl p-10 h-[600px] w-full">
-          {/* Content within the rotated card that stays non-rotated */}
-          <div className="absolute inset-0 flex flex-row transform rotate-12 p-8">
+        {/* Main skewed card */}
+        <div className="relative transform -skew-y-12 bg-gradient-to-bl from-white to-transparent p-10 h-[600px] w-full">
+          
+          {/* Inner content container without skew */}
+          <div className="absolute inset-0 flex flex-row transform skew-y-12 p-8 h-full w-full">
+            
             {/* Left Column */}
-            <div className="w-1/2 pr-8">
+            <div className="w-1/2 pr-8 h-full">
               {/* Image changing card with 20% opacity */}
               <div className="bg-white bg-opacity-20 rounded-lg p-4 h-full flex items-center justify-center">
                 <img
@@ -33,7 +35,7 @@ const ProblemStatement: React.FC = () => {
             </div>
 
             {/* Right Column */}
-            <div className="w-1/2">
+            <div className="w-1/2 h-full">
               {/* Heading with Madimi font */}
               <h1 className="text-5xl font-bold text-white mb-6 font-madimi">
                 The Problem Statement
