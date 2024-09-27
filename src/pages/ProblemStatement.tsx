@@ -17,15 +17,15 @@ const ProblemStatement: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="relative w-full max-w-6xl">
         {/* Main skewed card */}
-        <div className="relative transform -skew-y-12 bg-gradient-to-r from-[#C0E1C7] to-transparent p-10 h-[600px] w-full">
+        <div className="relative transform -skew-y-12 bg-gradient-to-r from-[#C0E1C7] to-transparent p-10 h-[600px] w-full rounded-full">
           
           {/* Inner content container without skew */}
           <div className="absolute inset-0 flex flex-row transform skew-y-12 p-8 h-full w-full">
             
             {/* Left Column */}
-            <div className="w-1/2 pr-8 h-full">
+            <div className="w-1/2 pr-8 pt-[20%] h-full">
               {/* Image changing card with 20% opacity */}
-              <div className="bg-white bg-opacity-20 rounded-lg p-4 h-full flex items-center justify-center">
+              <div className="bg-white bg-opacity-20 p-4 rounded-lg flex items-center justify-center">
                 <img
                   src={images[currentImage]}
                   alt="Rotating content"
