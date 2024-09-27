@@ -4,6 +4,8 @@ import ProblemStatement from './pages/ProblemStatement';
 import WorkFlow from './pages/WorkFlow';
 import HowItWorks from './pages/HowItWorks';
 import QualityAssessment from './pages/QualityAssessment';
+import Review from './pages/Review';
+import TheTeam from './pages/Team';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +16,8 @@ const App: React.FC = () => {
       <WorkFlow/>
       <HowItWorks/>
       <QualityAssessment/>
+      <Review/>
+      <TheTeam/>
     </div>
   );
 };
