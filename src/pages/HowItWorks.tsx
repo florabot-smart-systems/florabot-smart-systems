@@ -28,7 +28,7 @@ const HowItWorks: React.FC = () => {
       <div className="w-full max-w-6xl space-y-16">
 
         {/* Top Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="bg-gradient-to-r from-[#C0E1C7] to-transparent p-5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* YouTube Video */}
           <div className="bg-white bg-opacity-10 p-4 rounded-lg shadow-md">
             <iframe
@@ -53,7 +53,8 @@ const HowItWorks: React.FC = () => {
         </div>
 
         {/* Bottom Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="bg-gradient-to-l from-[#C0E1C7] to-transparent p-5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
           {/* Image Stitching Based Analysis */}
           <div className="space-y-4">
             <h2 className="text-3xl font-bold font-madimi text-white">Image Stitching Based Analysis</h2>
@@ -69,7 +70,7 @@ const HowItWorks: React.FC = () => {
                 key={index}
                 src={img}
                 alt={`Stitched ${index + 1}`}
-                className="w-full h-60 object-cover rounded-lg cursor-pointer transition transform hover:scale-105"
+                className="w-full h-60 object-cover cursor-pointer transition transform hover:scale-105"
                 onClick={() => openModal(img)}
               />
             ))}
