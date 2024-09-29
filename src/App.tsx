@@ -40,8 +40,8 @@ const App: React.FC = () => {
     <div className="bg-black min-h-screen relative">
       
       {/* Navigation Menu */}
-      <nav className="fixed top-0 left-0 h-full z-50 bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 shadow-lg">
-        <ul className="space-y-4 h-full p-4 flex flex-col items-center hover:w-48 w-16 transition-all duration-300">
+      <nav className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 bg-white bg-opacity-20 hover:bg-opacity-30 transition-all duration-300 shadow-lg rounded-xl w-14 hover:w-44 p-2">
+        <ul className="space-y-4 h-full flex flex-col items-center hover:items-start transition-all duration-300">
           <li className="w-full">
             <a href="#home" className={`flex items-center group transition ${activeSection === 'home' ? 'text-green-400' : 'text-white'}`}>
               <FontAwesomeIcon icon={faHome} className="w-6 h-6 mr-0 group-hover:mr-2 transition" />
