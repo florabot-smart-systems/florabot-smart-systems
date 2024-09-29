@@ -40,12 +40,12 @@ const WorkFlow: React.FC = () => {
               <div className="mb-4">
                 <img
                   src="imgs/Path_Planning_1.png"
-                  alt="Wide Image 1"
+                  alt="Wide 1"
                   className="w-full h-40 object-cover rounded-lg mb-4"
                 />
                 <img
                   src="imgs/Path_Planning_2.png"
-                  alt="Wide Image 2"
+                  alt="Wide 2"
                   className="w-full h-40 object-cover rounded-lg"
                 />
               </div>

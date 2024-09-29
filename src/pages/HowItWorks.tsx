@@ -68,7 +68,7 @@ const HowItWorks: React.FC = () => {
               <img
                 key={index}
                 src={img}
-                alt={`Stitched Image ${index + 1}`}
+                alt={`Stitched ${index + 1}`}
                 className="w-full h-60 object-cover rounded-lg cursor-pointer transition transform hover:scale-105"
                 onClick={() => openModal(img)}
               />

@@ -41,12 +41,12 @@ const QualityAssessment: React.FC = () => {
           <div className="space-y-6">
             <img
               src="imgs/Shapley_Feature_contrib.png"
-              alt="Rating Image 1"
+              alt="Rating 1"
               className="w-full h-40 object-cover rounded-lg shadow-md"
             />
             <img
               src="imgs/Shapley_Impact.png"
-              alt="Rating Image 2"
+              alt="Rating 2"
               className="w-full h-40 object-cover rounded-lg shadow-md"
             />
           </div>
