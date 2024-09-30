@@ -23,13 +23,13 @@ const ProblemStatement: React.FC = () => {
           <div className="absolute inset-0 flex flex-row transform skew-y-12 p-8 h-full w-full">
             
             {/* Left Column */}
-            <div className="w-1/2 pr-8 pt-[20%] h-full">
+            <div className="w-3/4 pr-8 pt-[15%] h-full">
               {/* Image changing card with 20% opacity */}
               <div className="bg-white bg-opacity-20 p-4 rounded-lg flex items-center justify-center">
                 <img
                   src={images[currentImage]}
                   alt="Rotating content"
-                  className="w-full h-72 object-cover rounded-lg"
+                  className="w-full h-80 object-cover rounded-lg"
                 />
               </div>
             </div>

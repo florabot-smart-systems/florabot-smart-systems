@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         madimi: ['Madimi One', 'sans-serif'],
-        mplus: ['M PLUS 2', 'sans-serif'],
+        mplus: ['Madimi One', 'sans-serif'],
       },
     },
   },

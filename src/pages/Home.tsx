@@ -2,45 +2,45 @@ import React from 'react';
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="relative w-full max-w-6xl">
-        {/* First large card with rounded corners and color #C0E1C7 */}
-        <div className="bg-[#C0E1C7] rounded-3xl p-4 sm:p-10 min-h-[600px] h-auto"></div>
+    <div className="min-h-screen flex items-center justify-center p-8">
+      {/* Main Container */}
+      <div className="w-full max-w-7xl flex flex-col items-center space-y-12">
 
-        {/* Second large card overlayed */}
-        <div className="absolute top-8 left-6 bg-white bg-opacity-70 rounded-3xl p-4 sm:p-10 w-full h-auto min-h-[600px] flex flex-col lg:flex-row shadow-lg">
-          {/* Left Column */}
-          <div className="lg:w-1/2 w-full flex flex-col justify-center lg:pr-8 pr-0 mb-6 lg:mb-0">
+        {/* Hero Section with Emphasis on Image */}
+        <div className="relative w-full">
+          {/* Large Image */}
+          <img
+            src="imgs/main.png"
+            alt="main"
+            className="w-full max-h-[80vh] object-cover rounded-3xl shadow-2xl"
+          />
+          {/* Logo and Heading overlaying the image */}
+          <div className="absolute top-[45%] flex items-center space-x-4 bg-white bg-opacity-40 w-full">
             {/* Logo */}
-            <div className="mb-4">
-              <img
-                src="imgs/logo.png"
-                alt="Logo"
-                className="h-16 sm:h-20"
-              />
-            </div>
-            {/* Heading */}
-            <h1 className="text-3xl sm:text-5xl font-bold mb-4 sm:mb-6 font-madimi">Florabot</h1>
-            {/* Image */}
             <img
-              src="imgs/main.png"
-              alt="main"
-              className="w-full h-40 sm:h-56 object-cover rounded-lg"
+              src="imgs/logo.png"
+              alt="Logo"
+              className="h-20 sm:h-28"
             />
-          </div>
-
-          {/* Right Column */}
-          <div className="lg:w-1/2 w-full flex flex-col justify-center h-full">
-            {/* Small Headline */}
-            <h2 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-4 font-madimi">
-              An automated unmanned path-following ground robot for plant counting and quality assessment
-            </h2>
-            {/* Paragraph */}
-            <p className="text-lg sm:text-xl font-mplus">
-              Ornamental Nursery has hundreds of thousands of plants in a single nursery, and in a single nursery, hundreds of different varieties of plants can be found. It is difficult to manage these ornamental plants and keep track of them. Their count is essential, especially in the selling season, and their quality has to be estimated sidewise continuously. Moreover, the impending labor shortage and higher wages, ultimately lead to higher plant prices and that, in turn, impacts the market.
-            </p>
+            {/* Heading */}
+            <h1 className="text-4xl sm:text-6xl font-black font-madimi drop-shadow-lg">
+              Florabot
+            </h1>
           </div>
         </div>
+
+        {/* Content Section */}
+        <div className="bg-[#C0E1C7] bg-opacity-20 rounded-3xl p-8 lg:p-16 w-full shadow-lg text-center lg:text-left text-white">
+          {/* Headline */}
+          <h2 className="text-3xl sm:text-3xl font-semibold mb-4 font-madimi">
+            An Automated Path-Following Ground Robot for Plant Management
+          </h2>
+          {/* Paragraph */}
+          <p className="text-lg sm:text-xl font-mplus">
+            Ornamental nurseries contain hundreds of thousands of plants, with hundreds of different varieties. Managing these ornamental plants, keeping count, and assessing quality continuously is a challenge. Florabot provides a solution that helps overcome these issues, addressing labor shortages, optimizing costs, and maintaining high-quality standards across nurseries.
+          </p>
+        </div>
+
       </div>
     </div>
   );
