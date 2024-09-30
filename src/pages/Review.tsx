@@ -2,7 +2,7 @@ import React from 'react';
 
 const Review: React.FC = () => {
   return (
-    <div className="relative z-10 w-full max-w-7xl mt-16 mx-auto p-8 bg-gray-900 text-white">
+    <div className="relative z-10 w-full max-w-7xl mt-16 mx-auto p-8 bg-[#C0E1C7] bg-opacity-25 text-white">
 
       {/* Section Title */}
       <div className="w-full text-center mb-12 relative z-10">
