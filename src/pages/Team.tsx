@@ -65,7 +65,7 @@ const TheTeam: React.FC = () => {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className="relative z-10 bg-[#C0E1C7] bg-opacity-25 rounded-3xl p-8 shadow-md transition-transform transform hover:-translate-y-2 hover:shadow-xl"
+            className="relative z-10 bg-[#C0E1C7] bg-opacity-25 rounded-3xl p-8 shadow-md transition-transform transform hover:-translate-y-2 hover:shadow-xl text-center"
           >
             <img
               src={member.photo}
