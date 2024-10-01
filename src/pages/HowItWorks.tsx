@@ -33,8 +33,8 @@ const HowItWorks: React.FC = () => {
           <div className="bg-white bg-opacity-10 p-4 rounded-lg shadow-md">
             <iframe
               width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              height="300"
+              src="https://www.youtube.com/embed/Nc7T112d3jg?si=Mcdlf6X_pu4496Xh"
               title="YouTube video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
