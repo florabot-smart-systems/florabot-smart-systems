@@ -35,25 +35,42 @@ const QualityAssessment: React.FC = () => {
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity">
               <span className="text-white text-lg font-bold">Click to view image</span>
             </div>
-            <p className="text-lg font-mplus">
-              The SHAP plots for test data indicate that Area and Perimeter are the most influential features, followed by Circularity and Eccentricity. This suggests that canopy size and shape are critical factors in determining the model’s output. The order of importance is consistent between the tests (Area &gt; Perimeter &gt; Circularity &gt; Eccentricity).
-            </p>
+            <div className='items-center justify-center text-center text-lg'>
+              <p><strong>Area</strong> ~  Plant growth and Canopy spread</p>
+              <p><strong>Perimeter</strong> ~ Stress or Disease indicator</p>
+              <p><strong>Eccentricity</strong> ~ Indicator of Growth pattern</p>
+              <p><strong>Circularity</strong> ~ Aesthetic Value of the plants</p>
+            </div>
           </div>
 
           {/* Right Column: Rounded Card with Paragraph */}
           <div className="p-6 h-full flex items-center justify-center">
-            <p className="text-2xl font-mplus text-white">
-              The general pattern of feature importance remains consistent, indicating that models for test data rely heavily on canopy size and shape for predicting plant ratings.
-            </p>
+            <div className="h-full flex flex-col items-center justify-center space-y-6 text-gray-200 font-mplus">
+              <div className="text-center text-lg">
+                <p ><strong>Rating 1</strong></p>
+                <p>Grade A – Marketable plants: 60-100% coverage</p>
+                <p><em>Canopy extends beyond pot evenly and canopy is full</em></p>
+              </div>
+              <div className="text-center text-lg">
+                <p><strong>Rating 2</strong></p>
+                <p>Grade B – Marketable plants: 30-60% coverage</p>
+                <p><em>Canopy is not even but is full or undersized</em></p>
+              </div>
+              <div className="text-center text-lg">
+                <p><strong>Rating 3</strong></p>
+                <p>Grade C – Marketable plants: 0-30% coverage</p>
+                <p><em>Canopy is not full or even and plant is not marketable</em></p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-
       {/* Second Row: Images and Ratings */}
       <div className="relative z-10 mb-12">
         <div className="bg-gradient-to-r from-[#C0E1C7] rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column: Two Images */}
-          <div className="space-y-4">
+          <div className="flex flex-col space-y-4">
             <div className="relative cursor-pointer" onClick={() => openModal('imgs/Shapley_Feature_contrib.png')}>
               <img
                 src="imgs/Shapley_Feature_contrib.png"
@@ -77,25 +94,17 @@ const QualityAssessment: React.FC = () => {
           </div>
 
           {/* Right Column: Ratings Description */}
-          <div className="h-full flex flex-col items-center justify-center space-y-6 text-gray-200 font-mplus">
-            <div className="text-center">
-              <p><strong>Rating 1</strong></p>
-              <p>Grade A – Marketable plants: 60-100% coverage</p>
-              <p><em>Canopy extends beyond pot evenly and canopy is full</em></p>
-            </div>
-            <div className="text-center">
-              <p><strong>Rating 2</strong></p>
-              <p>Grade B – Marketable plants: 30-60% coverage</p>
-              <p><em>Canopy is not even but is full or undersized</em></p>
-            </div>
-            <div className="text-center">
-              <p><strong>Rating 3</strong></p>
-              <p>Grade C – Marketable plants: 0-30% coverage</p>
-              <p><em>Canopy is not full or even and plant is not marketable</em></p>
-            </div>
+          <div className="flex flex-col justify-center space-y-4">
+            <p className="text-lg font-mplus text-white pb-10">
+              The general pattern of feature importance remains consistent, indicating that models for test data rely heavily on canopy size and shape for predicting plant ratings.
+            </p>
+            <p className="text-lg font-mplus text-white pt-10">
+              The SHAP plots for test data indicate that Area and Perimeter are the most influential features, followed by Circularity and Eccentricity. This suggests that canopy size and shape are critical factors in determining the model’s output. The order of importance is consistent between the tests (Area &gt; Perimeter &gt; Circularity &gt; Eccentricity).
+            </p>
           </div>
         </div>
       </div>
+
 
       {/* Third Row: Geometric Parameters vs Rating */}
       <div className="relative z-10">

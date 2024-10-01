@@ -52,14 +52,7 @@ const ProblemStatement: React.FC = () => {
               </h1>
               {/* Paragraph with M PLUS 2 font */}
               <p className="text-white text-lg font-mplus">
-                Ornamental industry has the major issue of keeping track of plant
-                counting and quality assessment. But this is laborious,
-                time-consuming, and contributes to health problems of the
-                laborers due to poor ergonomics. The nature of the job requires
-                extensive manual labor and the industry faces a labor shortage
-                with rising wages. Due to this, the ornamental worker feels
-                overwhelmed and concerned about the sustainability of work and
-                the industry’s future.
+                The ornamental industry faces significant challenges in tracking plant counts and quality assessments, which are labor-intensive, time-consuming, and contribute to health issues among workers due to poor ergonomics. The work demands extensive manual labor, and the industry struggles with a labor shortage and rising wages, leaving workers feeling overwhelmed and concerned about the sustainability of their jobs and the industry’s future.
               </p>
             </div>
           </div>

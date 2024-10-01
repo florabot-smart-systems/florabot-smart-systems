@@ -33,11 +33,11 @@ const HomePage: React.FC = () => {
         <div className="bg-[#C0E1C7] bg-opacity-20 rounded-3xl p-8 lg:p-16 w-full shadow-lg text-center lg:text-left text-white">
           {/* Headline */}
           <h2 className="text-3xl sm:text-3xl font-semibold mb-4 font-madimi">
-            An Automated Path-Following Ground Robot for Plant Management
+            Automated Path-Following Ground Robot for Plant Counting and Quality Assessment
           </h2>
           {/* Paragraph */}
           <p className="text-lg sm:text-xl font-mplus">
-            Ornamental nurseries contain hundreds of thousands of plants, with hundreds of different varieties. Managing these ornamental plants, keeping count, and assessing quality continuously is a challenge. Florabot provides a solution that helps overcome these issues, addressing labor shortages, optimizing costs, and maintaining high-quality standards across nurseries.
+          Ornamental nurseries contain hundreds of thousands of plants across various varieties, making their counting, quality assessment and continuous management challenging. Florabot offers a solution to address these issues by tackling labor shortages, optimizing costs, and ensuring high-quality standards in nurseries
           </p>
         </div>
 
