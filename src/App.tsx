@@ -8,6 +8,7 @@ import HowItWorks from './pages/HowItWorks';
 import QualityAssessment from './pages/QualityAssessment';
 import Review from './pages/Review';
 import TheTeam from './pages/Team';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -109,6 +110,7 @@ const App: React.FC = () => {
       <section id="team" className="relative">
         <TheTeam />
       </section>
+      <Footer/>
     </div>
   );
 };
