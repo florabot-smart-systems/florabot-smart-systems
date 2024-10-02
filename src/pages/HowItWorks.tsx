@@ -38,7 +38,7 @@ const HowItWorks: React.FC = () => {
         {/* Top Row */}
         <div className="bg-gradient-to-r from-[#C0E1C7] to-transparent p-5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* YouTube Video */}
-          <div className="bg-white bg-opacity-10 p-4 rounded-lg shadow-md">
+          <div className="p-4">
             <iframe
               width="100%"
               height="300"
