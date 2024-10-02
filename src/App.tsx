@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faLightbulb, faCogs, faChartBar, faUserTie, faUsers, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faLightbulb, faCogs, faChartBar, faUserTie, faUsers, faStar, faVideo } from '@fortawesome/free-solid-svg-icons';
 import HomePage from './pages/Home';
 import ProblemStatement from './pages/ProblemStatement';
+import Demonstration from './pages/Demonstration';
 import WorkFlow from './pages/WorkFlow';
 import HowItWorks from './pages/HowItWorks';
 import QualityAssessment from './pages/QualityAssessment';
@@ -14,7 +15,7 @@ const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('home');
 
   const handleScroll = () => {
-    const sections = ['home', 'problem-statement', 'workflow', 'how-it-works', 'quality-assessment', 'review', 'team'];
+    const sections = ['home', 'problem-statement', 'demonstration', 'workflow', 'how-it-works', 'quality-assessment', 'review', 'team'];
     const scrollPosition = window.scrollY + 100; // Adjust for highlighting
 
     const currentSection = sections.find(section => {
@@ -53,6 +54,12 @@ const App: React.FC = () => {
             <a href="#problem-statement" className={`flex items-center group transition ${activeSection === 'problem-statement' ? 'text-green-400' : 'text-white'}`}>
               <FontAwesomeIcon icon={faLightbulb} className="w-6 h-6 mr-0 group-hover:mr-2 transition" />
               <span className="opacity-0 group-hover:opacity-100 group-hover:inline-block transition ml-2">Problem</span>
+            </a>
+          </li>
+          <li className="w-full">
+            <a href="#demonstration" className={`flex items-center group transition ${activeSection === 'demonstration' ? 'text-green-400' : 'text-white'}`}>
+              <FontAwesomeIcon icon={faVideo} className="w-6 h-6 mr-0 group-hover:mr-2 transition" />
+              <span className="opacity-0 group-hover:opacity-100 group-hover:inline-block transition ml-2">Demonstration</span>
             </a>
           </li>
           <li className="w-full">
@@ -95,6 +102,9 @@ const App: React.FC = () => {
       <section id="problem-statement" className="relative">
         <ProblemStatement />
       </section>
+      <section id="demonstration" className="relative">
+        <Demonstration />
+      </section>
       <section id="workflow" className="relative">
         <WorkFlow />
       </section>
@@ -110,7 +120,7 @@ const App: React.FC = () => {
       <section id="team" className="relative">
         <TheTeam />
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
