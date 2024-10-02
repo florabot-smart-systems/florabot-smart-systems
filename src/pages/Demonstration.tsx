@@ -35,7 +35,7 @@ const Demonstration: React.FC = () => {
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold font-madimi text-white">Watch Our System in Action</h2>
                 <p className="text-lg font-mplus text-white">
-                  This video provides an in-depth overview of our plant tracking and assessment system. Learn how our technology leverages advanced segmentation techniques to count and assess plants in real-time, minimizing human error.
+                  This video provides an in-depth overview of our plant tracking and quality assessment system. Learn how our technology leverages advanced segmentation techniques to count and assess plants in real-time, minimizing human error.
                 </p>
               </div>
             </div>
