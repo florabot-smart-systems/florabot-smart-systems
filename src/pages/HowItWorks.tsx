@@ -3,17 +3,25 @@ import React, { useState } from 'react';
 const HowItWorks: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState<string | null>(null);
+  const [zoomLevel, setZoomLevel] = useState(1); // State to manage zoom level
 
   // Open modal with selected image
   const openModal = (image: string) => {
     setCurrentImage(image);
     setIsModalOpen(true);
+    setZoomLevel(1); // Reset zoom on open
   };
 
   // Close modal
   const closeModal = () => {
     setIsModalOpen(false);
     setCurrentImage(null);
+    setZoomLevel(1); // Reset zoom on close
+  };
+
+  // Toggle zoom state with multiple levels
+  const handleZoom = () => {
+    setZoomLevel(prevZoom => (prevZoom >= 3 ? 1 : prevZoom + 0.5)); // Cycles zoom levels: 1x, 1.5x, 2x, 2.5x, 3x
   };
 
   return (
@@ -63,9 +71,9 @@ const HowItWorks: React.FC = () => {
             </p>
           </div>
 
-          {/* Four Large Images Side by Side */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['imgs/stitched1.jpg', 'imgs/stitched2.jpg', 'imgs/stitched3.jpg', 'imgs/stitched4.jpg'].map((img, index) => (
+          {/* Two Large Images Covering Right Half */}
+          <div className="grid grid-cols-2 gap-4">
+            {['imgs/stitched3.jpg', 'imgs/stitched4.jpg'].map((img, index) => (
               <img
                 key={index}
                 src={img}
@@ -78,21 +86,31 @@ const HowItWorks: React.FC = () => {
         </div>
       </div>
 
-      {/* Image Modal */}
+      {/* Image Modal with Multiple Zoom Levels */}
       {isModalOpen && currentImage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-          <div className="relative max-w-4xl w-full p-4">
+          {/* Modal Background */}
+          <div className="relative max-w-7xl w-full p-4 flex items-center justify-center">
+            {/* Close Button */}
             <button
-              className="absolute top-4 right-4 text-white text-3xl font-bold"
+              className="absolute top-4 right-4 text-white text-3xl font-bold z-50 bg-gray-800 p-2 rounded-full hover:bg-gray-600"
               onClick={closeModal}
             >
               &times;
             </button>
-            <div className="overflow-auto max-h-screen">
+            {/* Fixed Size Image with Zoom Levels */}
+            <div className="overflow-hidden flex items-center justify-center">
               <img
                 src={currentImage}
                 alt="Expanded view"
-                className="w-full h-auto rounded-lg shadow-lg object-contain cursor-zoom-in hover:scale-105 transition duration-300 ease-in-out"
+                className={`rounded-lg shadow-lg transition-transform duration-300 ease-in-out`}
+                style={{
+                  transform: `scale(${zoomLevel})`,
+                  cursor: zoomLevel < 3 ? 'zoom-in' : 'zoom-out', // Change cursor based on zoom level
+                  maxWidth: '90vw',
+                  maxHeight: '80vh',
+                }}
+                onClick={handleZoom}
               />
             </div>
           </div>
